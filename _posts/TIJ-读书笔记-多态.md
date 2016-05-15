@@ -1,7 +1,9 @@
 title: TIJ 读书笔记 -- 多态
 date: 2015-09-01 22:40:12
-categories: java
-tags: 多态
+categories: 
+- java
+tags: 
+- 多态
 ---
 
 多态是TIJ的第八章，记录一些琐碎的语言细节和陷阱，平时更喜欢用interface的形式来实现多态，那样感觉会更顺眼，纯属个人喜好，O(∩_∩)O哈哈~

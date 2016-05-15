@@ -1,7 +1,9 @@
 title: TIJ读书笔记--IO
 date: 2016-02-28 10:34:08
-categories: java
-tags: io
+categories: 
+- java
+tags:
+- io
 ---
 
 时间飞逝，转眼就是2016，由于2015下半年事情太多，就把读书这事给松懈了，现在捡起来继续。

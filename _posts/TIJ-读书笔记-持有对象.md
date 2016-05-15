@@ -1,7 +1,13 @@
 title: TIJ 读书笔记 -- 持有对象
 date: 2015-09-28 22:58:47
-categories: java
-tags: 容器,Collections,sort,Comparable,Comparator
+categories: 
+- java
+tags: 
+- 容器
+- Collections
+- sort
+- Comparable
+- Comparator
 ---
 
 ### Overview

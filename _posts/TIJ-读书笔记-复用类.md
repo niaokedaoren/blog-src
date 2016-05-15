@@ -1,7 +1,12 @@
 title: TIJ 读书笔记 -- 复用类
 date: 2015-08-30 16:15:38
-categories: java
-tags: 继承,组合,final,类加载
+categories: 
+- java
+tags: 
+- 继承
+- 组合
+- final
+- 类加载
 ---
 
 ### 缘起

@@ -1,7 +1,11 @@
 title: hexo + github 搭建blog
 date: 2015-07-14 22:33:38
-categories: tools
-tags: hexo,github,blog
+categories:
+- tools
+tags:
+- hexo
+- github
+- blog
 ---
 
 网络上，随便搜一下hexo、github等关键词，就能出来一大堆相当详尽的博客搭建介绍，

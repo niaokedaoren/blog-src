@@ -1,7 +1,9 @@
 title: mysql数据插入优化
 date: 2015-07-21 21:59:38
-categories: database
-tags: mysql
+categories:
+- database
+tags:
+- mysql
 ---
 
 ### 缘起

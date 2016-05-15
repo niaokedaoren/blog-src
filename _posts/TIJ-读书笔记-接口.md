@@ -1,7 +1,11 @@
 title: TIJ 读书笔记 -- 接口
 date: 2015-09-07 22:27:36
-categories: java
-tags: 接口,策略模式,适配模式
+categories: 
+- java
+tags: 
+- 接口
+- 策略模式
+- 适配模式
 ---
 
 ### 一个例子
