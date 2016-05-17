@@ -9,8 +9,7 @@ tags:
 ---
 
 #### 缘起
-想把protobuf的message按字节数组输出，以前写到hbase里，很自然；但是现在需要写到
-hdfs上，突然就没法子了。google大法，发现有个base64的东西，问题一下迎刃而解。
+想把protobuf的message按字节数组输出，以前写到hbase里，很自然；但是现在需要写到hdfs上，突然就没法子了。google大法，发现有个base64的东西，问题一下迎刃而解。
 1. 输出字节数组：转成base64 string；
 2. 读取字节数组：从base64 string反解回来。
 
@@ -87,8 +86,9 @@ hello, Base64!
 h = 01101000
 e = 01100101
 l = 01101100
+
 | c1 | c2 | c3 | c4 |
-| :-: | :-: | :-: | :-: |
+| :--: | :--: | :--: | :--: |
 | 011010 | 000110 | 010101 | 101100 |
 | 26 | 6 | 21 | 44 |
 | a | G | V | s |
@@ -99,11 +99,13 @@ l = 01101100
 4 = 00110100
 ! = 00100001
 每6个bit构成base64编码的一个字母，剩余4个bit后面需补充2个0bit，构成第三个字母
+
 | c1 | c2 | c3 |
-| :-: | :-: | :-: |
+| :--: | :--: | :--: |
 | 001101 | 000010 | 000100 |
 | 13 | 2 | 4 |
 | N | C | E |
+
 因为只有NCE三个字母，所以需要一个部位等号，凑足4个字母，如果按照标准的base64编码，还需要加上 \r\n
 
 #### 结合protobuf的应用
@@ -122,12 +124,12 @@ protected void reduce(Text key, Iterable<Text> values, Context context) throws I
 }
 ```
 
-####利弊
-#####优点
+#### 利弊
+##### 优点
 1. 7 Bit ASCII characters are safe for transmission over the network and between different systems
 2. SMPT protocol for emails supports only 7 Bit ASCII Characters. Base64 is the commonly used technique to send binary files as attachments in emails.
 
-#####缺点
+##### 缺点
 1. Base64 encoding bloats the size of the original binary stream by 33 percent
 2. Encoding/Decoding process consumes resources and can cause performance problems
 

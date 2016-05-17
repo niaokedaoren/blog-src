@@ -135,6 +135,7 @@ statement.executeUpdate(sql);
 ```
 
 ###实验结果
+
 | 数据量 | Statement | PreparedStatement | StatementBatch | PreparedStatementBatch | Load |
 |-----|-------|------|-------|------|------|
 | 1w  | 273231 ms  | 273045 ms | 274518 ms | 273063 ms | 1002 ms |
