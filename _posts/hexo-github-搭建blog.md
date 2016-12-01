@@ -1,3 +1,4 @@
+---
 title: hexo + github 搭建blog
 date: 2015-07-14 22:33:38
 categories:
@@ -36,6 +37,8 @@ tags:
  可能是被墙了，加一个国内的源
  ``` bash
  $ npm config set registry https://registry.npm.taobao.org
+ // or edit ~/.npmrc, put the following line into it
+ // registry = https://registry.npm.taobao.org
  ```
  现在就可以顺利安装了。
 
